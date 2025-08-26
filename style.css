@@ -1,24 +1,21 @@
-.landing-page {
-  background-color: #ffffff;
-  display: grid;
-  justify-items: center;
-  align-items: start;
-  width: 100vw;
-  min-height: 100vh;
-  height: 100%;
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
 }
 
-.landing-page .div {
-  background-color: #ffffff;
-  overflow: hidden;
-  width: 1440px;
-  height: auto;
-  position: relative;
-  padding-bottom: 50px;
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 /* Navigation Bar */
-.landing-page .navbar {
+.navbar {
   width: 100%;
   height: 70px;
   background-color: #b9fdfd;
@@ -28,13 +25,13 @@
   position: relative;
 }
 
-.landing-page .navbar .burger {
-  width: 25px;
-  height: 25px;
+.burger {
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 
-.landing-page #menu {
+#menu {
   position: absolute;
   top: 70px;
   left: 0;
@@ -44,11 +41,11 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.landing-page #menu.hidden {
+#menu.hidden {
   transform: translateY(-150%);
 }
 
-.landing-page #menu ul {
+#menu ul {
   list-style: none;
   padding: 10px;
   margin: 0;
@@ -57,7 +54,7 @@
   gap: 10px;
 }
 
-.landing-page #menu ul li a {
+#menu ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
@@ -66,67 +63,50 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.landing-page #menu ul li a:hover {
+#menu ul li a:hover {
   background-color: #fafafa;
   border-radius: 5px;
 }
 
-/* Main Content */
-.landing-page .overlap-group {
-  position: relative;
-  width: 90%;
-  margin: 20px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.landing-page .rectangle {
-  width: 100%;
-  height: 200px;
-  background-color: #bab8f6;
-  border-radius: 10px;
-  margin: 10px;
-}
-
-.landing-page .rectangle-2 {
-  width: 100px;
-  height: 200px;
-  background-color: #bab8f6;
-  margin: 10px;
-}
-
-.landing-page .img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 50%;
-  margin: 20px;
-}
-
-.landing-page .text-wrapper {
-  text-align: left;
-  font-family: Arial, sans-serif;
-  margin: 10px 0;
+/* Profile Section */
+.profile-section {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  line-height: 1.5;
-}
-
-.landing-page .text-wrapper span {
-  display: block;
-  font-size: 16px;
-}
-
-.landing-page .text-wrapper-4 {
-  font-size: 24px;
-  font-weight: bold;
+  align-items: center;
   text-align: center;
   margin: 20px 0;
 }
 
-.landing-page .overlap {
+.profile-section .img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-section h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.profile-section p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Quote Section */
+.quote-section {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Sections */
+.about-section,
+.hobbies-section,
+.future-section {
   background-color: #d9d9d9;
   padding: 20px;
   border-radius: 10px;
@@ -134,30 +114,31 @@
   width: 80%;
 }
 
-.landing-page .overlap h2 {
+.about-section h2,
+.hobbies-section h2,
+.future-section h2 {
   margin-top: 0;
 }
 
-.landing-page .hobbies ul {
+.hobbies-section ul {
   list-style: none;
   padding: 0;
 }
 
-.landing-page .hobbies ul li {
+.hobbies-section ul li {
   font-size: 18px;
   margin: 10px 0;
 }
 
-.landing-page .hobbies ul li i {
+.hobbies-section ul li i {
   margin-right: 10px;
 }
 
-.landing-page footer {
+/* Footer */
+footer {
   text-align: center;
   background-color: #b702ff;
   color: #fff;
   padding: 10px 0;
-  position: relative;
-  bottom: 0;
   width: 100%;
 }
