@@ -14,16 +14,24 @@
   <body>
     <div class="landing-page">
       <div class="div">
+        <!-- Navigation Bar -->
         <div class="navbar">
-          <img class="logo" src="img/burger.png" alt="Logo" />
-          <nav>
+          <img
+            class="burger"
+            src="img/burger.png"
+            alt="Menu"
+            onclick="toggleMenu()"
+          />
+          <div id="menu" class="menu hidden">
             <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#hobbies">Hobbies</a></li>
               <li><a href="#future">Future Goals</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
+
+        <!-- Main Content -->
         <div class="overlap-group">
           <div class="rectangle"></div>
           <div class="rectangle-2"></div>
@@ -57,5 +65,5 @@
         <p>&copy; 2025 Kantawat Phothisitthisak. All rights reserved.</p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
-</html>
