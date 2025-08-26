@@ -16,11 +16,12 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  width: 1440px; /* Makes the header span the entire width of the viewport */
+  width: 100vw; /* Ensures full width of the header */
   height: 70px;
-  background-color: #b9fdfd;
+  background-color: #b9fdfd; /* Matches the blue color */
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
   position: relative;
 }
@@ -137,7 +138,7 @@ body {
 /* Footer */
 footer {
   text-align: center;
-  background-color: #b702ff;
+  background-color: #b702ff; /* Purple footer */
   color: #fff;
   padding: 10px 0;
   width: 100vw; /* Ensures the footer spans the entire width of the viewport */
