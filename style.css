@@ -17,41 +17,61 @@
   padding-bottom: 50px;
 }
 
+/* Navigation Bar */
 .landing-page .navbar {
   width: 100%;
   height: 70px;
   background-color: #b9fdfd;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 0 20px;
+  position: relative;
 }
 
-.landing-page .navbar .logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.landing-page .navbar .burger {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.landing-page .navbar ul {
+.landing-page #menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.landing-page #menu.hidden {
+  transform: translateY(-150%);
+}
+
+.landing-page #menu ul {
   list-style: none;
-  display: flex;
-  gap: 20px;
+  padding: 10px;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.landing-page .navbar ul li {
-  display: inline;
-}
-
-.landing-page .navbar ul li a {
+.landing-page #menu ul li a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
-  font-size: 16px;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s ease-in-out;
 }
 
+.landing-page #menu ul li a:hover {
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+
+/* Main Content */
 .landing-page .overlap-group {
   position: relative;
   width: 90%;
