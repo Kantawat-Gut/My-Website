@@ -12,152 +12,125 @@
   background-color: #ffffff;
   overflow: hidden;
   width: 1440px;
-  height: 1024px;
+  height: auto;
   position: relative;
+  padding-bottom: 50px;
 }
 
-.landing-page .div-2 {
-  position: absolute;
-  width: 1440px;
-  height: 110px;
-  top: 0;
-  left: 0;
+.landing-page .navbar {
+  width: 100%;
+  height: 70px;
   background-color: #b9fdfd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
-.landing-page .image {
-  position: absolute;
-  width: 71px;
-  height: 71px;
-  top: 19px;
-  left: 25px;
-  object-fit: cover;
+.landing-page .navbar .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.landing-page .navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.landing-page .navbar ul li {
+  display: inline;
+}
+
+.landing-page .navbar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .landing-page .overlap-group {
-  position: absolute;
-  width: 1343px;
-  height: 471px;
-  top: 110px;
-  left: 97px;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-page .rectangle {
-  position: absolute;
-  width: 705px;
-  height: 368px;
-  top: 40px;
-  left: 511px;
+  width: 100%;
+  height: 200px;
   background-color: #bab8f6;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .landing-page .rectangle-2 {
-  position: absolute;
-  width: 142px;
-  height: 368px;
-  top: 42px;
-  left: 0;
+  width: 100px;
+  height: 200px;
   background-color: #bab8f6;
+  margin: 10px;
 }
 
 .landing-page .img {
-  position: absolute;
-  width: 425px;
-  height: 471px;
-  top: 0;
-  left: 92px;
-  object-fit: cover;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px;
 }
 
-.landing-page .text-wrapper {
-  position: absolute;
-  width: 805px;
-  height: 70px;
-  top: 84px;
-  left: 538px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  color: #000000;
-  font-size: var(--heading-font-size);
-  letter-spacing: var(--heading-letter-spacing);
-  line-height: var(--heading-line-height);
-  font-style: var(--heading-font-style);
-}
-
-.landing-page .text-wrapper-2 {
-  position: absolute;
-  width: 262px;
-  height: 70px;
-  top: 175px;
-  left: 538px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  color: #000000;
-  font-size: var(--heading-font-size);
-  letter-spacing: var(--heading-letter-spacing);
-  line-height: var(--heading-line-height);
-  font-style: var(--heading-font-style);
-}
-
+.landing-page .text-wrapper,
+.landing-page .text-wrapper-2,
 .landing-page .text-wrapper-3 {
-  position: absolute;
-  width: 771px;
-  height: 141px;
-  top: 225px;
-  left: 538px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  color: #000000;
-  font-size: var(--heading-font-size);
-  letter-spacing: var(--heading-letter-spacing);
-  line-height: var(--heading-line-height);
-  font-style: var(--heading-font-style);
-}
-
-.landing-page .rectangle-3 {
-  position: absolute;
-  width: 1440px;
-  height: 100px;
-  top: 925px;
-  left: 0;
-  background-color: #b702ff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
 }
 
 .landing-page .text-wrapper-4 {
-  position: absolute;
-  height: 44px;
-  top: 601px;
-  left: 267px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  color: #000000;
-  font-size: var(--heading-font-size);
-  letter-spacing: var(--heading-letter-spacing);
-  line-height: var(--heading-line-height);
-  white-space: nowrap;
-  font-style: var(--heading-font-style);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .landing-page .overlap {
-  position: absolute;
-  width: 1101px;
-  height: 226px;
-  top: 668px;
-  left: 170px;
   background-color: #d9d9d9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 80%;
 }
 
-.landing-page .p {
-  position: absolute;
-  width: 949px;
-  height: 188px;
-  top: 18px;
-  left: 76px;
-  font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  color: #000000;
-  font-size: var(--heading-font-size);
-  letter-spacing: var(--heading-letter-spacing);
-  line-height: var(--heading-line-height);
-  font-style: var(--heading-font-style);
+.landing-page .overlap h2 {
+  margin-top: 0;
+}
+
+.landing-page .hobbies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.landing-page .hobbies ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.landing-page .hobbies ul li i {
+  margin-right: 10px;
+}
+
+.landing-page footer {
+  text-align: center;
+  background-color: #b702ff;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
