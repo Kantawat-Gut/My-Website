@@ -16,7 +16,7 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  width: 100vw; /* Makes the header span the entire width of the viewport */
+  width: 1440px; /* Makes the header span the entire width of the viewport */
   height: 70px;
   background-color: #b9fdfd;
   display: flex;
