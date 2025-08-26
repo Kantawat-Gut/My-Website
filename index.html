@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
   <body>
     <div class="landing-page">
-      <div class="div">
+      <header>
         <!-- Navigation Bar -->
         <div class="navbar">
           <img
@@ -30,39 +27,38 @@
             </ul>
           </div>
         </div>
+      </header>
 
+      <main>
         <!-- Main Content -->
-        <div class="overlap-group">
-          <div class="rectangle"></div>
-          <div class="rectangle-2"></div>
+        <div class="profile-section">
           <img class="img" src="img/image-6.jpg" alt="Profile" />
-          <div class="text-wrapper">
-            <span>Kantawat Phothisitthisak</span>
-            <span>M 6/2 No.2</span>
-            <span>Suankularb Wittayalai Nonthaburi</span>
+          <div class="profile-text">
+            <h1>Kantawat Phothisitthisak</h1>
+            <p>M 6/2 No.2</p>
+            <p>Suankularb Wittayalai Nonthaburi</p>
           </div>
         </div>
-        <div class="rectangle-3"></div>
-        <div class="text-wrapper-4">Sky’s the limit</div>
-        <div class="overlap" id="about">
-          <h2>About Me</h2>
-          <p class="p">
-            Hello, my name is Gut. I’m 17. I like aviation and motorsports. I
-            want to be an engineer or a pilot in the future.
-          </p>
+        <div class="quote-section">
+          <p>Sky’s the limit</p>
         </div>
-        <div class="hobbies" id="hobbies">
+        <section id="about" class="about-section">
+          <h2>About Me</h2>
+          <p>Hello, my name is Gut. I’m 17. I like aviation and motorsports. I want to be an engineer or a pilot in the future.</p>
+        </section>
+        <section id="hobbies" class="hobbies-section">
           <h2>Hobbies</h2>
           <ul>
             <li><i class="fas fa-plane"></i> Aviation Enthusiast</li>
             <li><i class="fas fa-car"></i> Motorsports Fan</li>
           </ul>
-        </div>
-        <div class="future" id="future">
+        </section>
+        <section id="future" class="future-section">
           <h2>Future Goals</h2>
           <p>I aspire to become an accomplished engineer or a skilled pilot.</p>
-        </div>
-      </div>
+        </section>
+      </main>
+
       <footer>
         <p>&copy; 2025 Kantawat Phothisitthisak. All rights reserved.</p>
       </footer>
