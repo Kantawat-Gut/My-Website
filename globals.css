@@ -1,18 +1,82 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+/* CSS Reset */
 * {
-  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  margin: 0px;
-  height: 100%;
+
+html, body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
 }
-/* a blue color as a generic focus style */
-button:focus-visible {
-  outline: 2px solid #4a90e2 !important;
-  outline: -webkit-focus-ring-color auto 5px !important;
+
+/* Variables for Consistent Styling */
+:root {
+  --primary-color: #b9fdfd;
+  --secondary-color: #bab8f6;
+  --accent-color: #b702ff;
+  --text-color: #333;
+  --heading-font-family: 'Arial', sans-serif;
+  --heading-font-weight: bold;
+  --heading-font-size: 24px;
+  --heading-line-height: 1.4;
+  --heading-letter-spacing: 0.5px;
+  --body-font-family: 'Arial', sans-serif;
+  --body-font-size: 16px;
+  --body-line-height: 1.6;
+  --body-letter-spacing: 0.3px;
 }
+
+/* Utility Classes */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Global Styles for Links */
 a {
   text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Button Styling */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Global Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
