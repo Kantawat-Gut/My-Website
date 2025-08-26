@@ -29,8 +29,8 @@
 }
 
 .landing-page .navbar .burger {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   cursor: pointer;
 }
 
@@ -104,12 +104,19 @@
   margin: 20px;
 }
 
-.landing-page .text-wrapper,
-.landing-page .text-wrapper-2,
-.landing-page .text-wrapper-3 {
-  text-align: center;
+.landing-page .text-wrapper {
+  text-align: left;
   font-family: Arial, sans-serif;
   margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  line-height: 1.5;
+}
+
+.landing-page .text-wrapper span {
+  display: block;
+  font-size: 16px;
 }
 
 .landing-page .text-wrapper-4 {
