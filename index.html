@@ -6,29 +6,23 @@
   <title>Kantawat Phothisitthisak | Personal Website</title>
   <link rel="stylesheet" href="globals.css" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <!-- Hamburger Menu -->
+  <!-- Hamburger menu -->
   <nav class="navbar">
-    <button class="burger" id="burger-btn" aria-label="Open menu">
-      <i class="fas fa-bars"></i>
-    </button>
-    <div id="side-menu" class="side-menu hidden">
-      <ul>
-        <li><a href="#home" data-section="home">Home</a></li>
-        <li><a href="#activities" data-section="activities">Activities</a></li>
-        <li><a href="#experience" data-section="experience">Experience</a></li>
-        <li><a href="#contact" data-section="contact">Contact Info</a></li>
-        <li><a href="#awards" data-section="awards">Awards</a></li>
-      </ul>
+    <button class="burger" id="burger-btn">&#9776;</button>
+    <div id="menu" class="menu hidden">
+      <a href="#" data-page="home">Home</a>
+      <a href="#" data-page="activities">Activities</a>
+      <a href="#" data-page="experience">Experience</a>
+      <a href="#" data-page="contact">Contact Info</a>
+      <a href="#" data-page="awards">Awards</a>
     </div>
   </nav>
 
-  <!-- Pages/Sections -->
   <main>
-    <section id="home" class="page-section"> <!-- This is your first page -->
-      <!-- Put your existing home page content here -->
+    <!-- Home Page -->
+    <section id="home" class="page-section">
       <div class="profile-section">
         <img class="img" src="img/image-6.jpg" alt="Profile" />
         <div class="profile-text">
@@ -40,28 +34,35 @@
       <div class="quote-section">
         <p>Sky’s the limit</p>
       </div>
-      <!-- ... rest of your original page ... -->
+      <div class="intro-section">
+        <p>
+          Hello, my name is Gut. I’m 17. I like aviation and motorsports. I want to be an engineer or a pilot in the future.
+        </p>
+      </div>
     </section>
 
+    <!-- Activities Page -->
     <section id="activities" class="page-section hidden">
-      <!-- You can design this page and send the content to me later -->
       <h2>Activities</h2>
-      <p>[Your activities content/design here]</p>
+      <p>(Design this section with your activities)</p>
     </section>
 
+    <!-- Experience Page -->
     <section id="experience" class="page-section hidden">
       <h2>Experience</h2>
-      <p>[Your experience content/design here]</p>
+      <p>(Design this section with your experiences)</p>
     </section>
 
+    <!-- Contact Info Page -->
     <section id="contact" class="page-section hidden">
       <h2>Contact Info</h2>
-      <p>[Your contact info content/design here]</p>
+      <p>(Design this section with your contact info)</p>
     </section>
 
+    <!-- Awards Page -->
     <section id="awards" class="page-section hidden">
       <h2>Awards</h2>
-      <p>[Your awards content/design here]</p>
+      <p>(Design this section with your awards)</p>
     </section>
   </main>
 
