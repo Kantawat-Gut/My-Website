@@ -1,82 +1,66 @@
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
+/* Reset and global styles for consistency across all pages */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: Arial, sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Headings and paragraphs */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: 700;
+  color: #222;
+}
+
+p {
+  margin: 0 0 1em 0;
   line-height: 1.6;
 }
 
-/* Variables for Consistent Styling */
-:root {
-  --primary-color: #b9fdfd;
-  --secondary-color: #bab8f6;
-  --accent-color: #b702ff;
-  --text-color: #333;
-  --heading-font-family: 'Arial', sans-serif;
-  --heading-font-weight: bold;
-  --heading-font-size: 24px;
-  --heading-line-height: 1.4;
-  --heading-letter-spacing: 0.5px;
-  --body-font-family: 'Arial', sans-serif;
-  --body-font-size: 16px;
-  --body-line-height: 1.6;
-  --body-letter-spacing: 0.3px;
-}
-
-/* Utility Classes */
-.container {
-  width: 90%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
-/* Global Styles for Links */
-a {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--secondary-color);
-}
-
-/* Button Styling */
-button {
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: var(--secondary-color);
-}
-
-/* Global Image Styling */
+/* Images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Links */
+a {
+  color: #b702ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #222;
+}
+
+/* Utility classes */
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* For page transitions if you want smooth fade (optional) */
+.page-section {
+  transition: opacity 0.3s;
 }
