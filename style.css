@@ -1,60 +1,112 @@
-/* Hide elements with hidden class */
-.hidden { display: none; }
-
-/* Side menu styling */
-.side-menu {
+.navbar {
+  width: 100vw;
+  height: 56px;
+  background: #b9fdfd;
   position: fixed;
   top: 0;
   left: 0;
-  width: 220px;
-  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+
+.burger {
+  background: none;
+  border: none;
+  font-size: 32px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 56px;
+  left: 0;
   background: #b9fdfd;
+  width: 180px;
   box-shadow: 2px 0 8px rgba(0,0,0,0.08);
-  z-index: 1000;
-  padding-top: 70px;
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
 }
 
-.side-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.side-menu ul li a {
-  display: block;
-  padding: 16px 24px;
+.menu a {
+  padding: 12px 24px;
   color: #222;
-  font-size: 18px;
   text-decoration: none;
-  transition: background 0.2s;
+  font-size: 18px;
 }
 
-.side-menu ul li a:hover {
+.menu a:hover {
   background: #b702ff;
   color: #fff;
 }
 
-/* Hamburger button */
-.burger {
-  background: #b9fdfd;
-  border: none;
-  font-size: 32px;
-  cursor: pointer;
-  padding: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1100;
-}
+.hidden { display: none; }
 
-/* Ensure main content isn't under the menu */
 main {
-  margin-left: 0;
-  transition: margin-left 0.3s;
+  margin-top: 72px;
+  margin-bottom: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (min-width: 600px) {
-  main {
-    margin-left: 0;
-  }
+.page-section {
+  width: 90%;
+  max-width: 700px;
+  margin-bottom: 32px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+  padding: 32px 18px;
+  transition: opacity 0.3s;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-text h1 {
+  margin: 10px 0 2px 0;
+  font-size: 26px;
+}
+.profile-text p {
+  margin: 2px 0;
+  font-size: 17px;
+}
+.quote-section {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 18px 0;
+  text-align: center;
+}
+.intro-section {
+  font-size: 18px;
+  margin: 18px 0;
+  text-align: center;
+  color: #333;
+}
+footer {
+  width: 100vw;
+  background: #b702ff;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 16px;
+  z-index: 10;
 }
