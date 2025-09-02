@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  </head>
-  <body>
-    <div class="landing-page">
-      <header>
-        <!-- Navigation Bar -->
-        <div class="navbar">
-          <img
-            class="burger"
-            src="img/burger.png"
-            alt="Menu"
-            onclick="toggleMenu()"
-          />
-          <div id="menu" class="menu hidden">
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#hobbies">Hobbies</a></li>
-              <li><a href="#future">Future Goals</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-
-      <main>
-        <!-- Main Content -->
-        <div class="profile-section">
-          <img class="img" src="img/image-6.jpg" alt="Profile" />
-          <div class="profile-text">
-            <h1>Kantawat Phothisitthisak</h1>
-            <p>M 6/2 No.2</p>
-            <p>Suankularb Wittayalai Nonthaburi</p>
-          </div>
-        </div>
-        <div class="quote-section">
-          <p>Sky’s the limit</p>
-        </div>
-        <section id="about" class="about-section">
-          <h2>About Me</h2>
-          <p>Hello, my name is Gut. I’m 17. I like aviation and motorsports. I want to be an engineer or a pilot in the future.</p>
-        </section>
-        <section id="hobbies" class="hobbies-section">
-          <h2>Hobbies</h2>
-          <ul>
-            <li><i class="fas fa-plane"></i> Aviation Enthusiast</li>
-            <li><i class="fas fa-car"></i> Motorsports Fan</li>
-          </ul>
-        </section>
-        <section id="future" class="future-section">
-          <h2>Future Goals</h2>
-          <p>I aspire to become an accomplished engineer or a skilled pilot.</p>
-        </section>
-      </main>
-
-      <footer>
-        <p>&copy; 2025 Kantawat Phothisitthisak. All rights reserved.</p>
-      </footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kantawat Phothisitthisak | Personal Website</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+  <!-- Hamburger Menu -->
+  <nav class="navbar">
+    <button class="burger" id="burger-btn" aria-label="Open menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div id="side-menu" class="side-menu hidden">
+      <ul>
+        <li><a href="#home" data-section="home">Home</a></li>
+        <li><a href="#activities" data-section="activities">Activities</a></li>
+        <li><a href="#experience" data-section="experience">Experience</a></li>
+        <li><a href="#contact" data-section="contact">Contact Info</a></li>
+        <li><a href="#awards" data-section="awards">Awards</a></li>
+      </ul>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </nav>
+
+  <!-- Pages/Sections -->
+  <main>
+    <section id="home" class="page-section"> <!-- This is your first page -->
+      <!-- Put your existing home page content here -->
+      <div class="profile-section">
+        <img class="img" src="img/image-6.jpg" alt="Profile" />
+        <div class="profile-text">
+          <h1>Kantawat Phothisitthisak</h1>
+          <p>M 6/2 No.2</p>
+          <p>Suankularb Wittayalai Nonthaburi</p>
+        </div>
+      </div>
+      <div class="quote-section">
+        <p>Sky’s the limit</p>
+      </div>
+      <!-- ... rest of your original page ... -->
+    </section>
+
+    <section id="activities" class="page-section hidden">
+      <!-- You can design this page and send the content to me later -->
+      <h2>Activities</h2>
+      <p>[Your activities content/design here]</p>
+    </section>
+
+    <section id="experience" class="page-section hidden">
+      <h2>Experience</h2>
+      <p>[Your experience content/design here]</p>
+    </section>
+
+    <section id="contact" class="page-section hidden">
+      <h2>Contact Info</h2>
+      <p>[Your contact info content/design here]</p>
+    </section>
+
+    <section id="awards" class="page-section hidden">
+      <h2>Awards</h2>
+      <p>[Your awards content/design here]</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kantawat Phothisitthisak. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
