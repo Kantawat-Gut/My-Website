@@ -1,145 +1,60 @@
-/* General Layout */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
+/* Hide elements with hidden class */
+.hidden { display: none; }
 
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-}
-
-/* Navigation Bar */
-.navbar {
-  width: 100vw; /* Ensures full width of the header */
-  height: 70px;
-  background-color: #b9fdfd; /* Matches the blue color */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  position: relative;
-}
-
-.burger {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-#menu {
-  position: absolute;
-  top: 70px;
+/* Side menu styling */
+.side-menu {
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  width: 220px;
+  height: 100vh;
+  background: #b9fdfd;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  z-index: 1000;
+  padding-top: 70px;
 }
 
-#menu.hidden {
-  transform: translateY(-150%);
-}
-
-#menu ul {
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-#menu ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  padding: 10px;
-  display: block;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#menu ul li a:hover {
-  background-color: #fafafa;
-  border-radius: 5px;
-}
-
-/* Profile Section */
-.profile-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 20px 0;
-}
-
-.profile-section .img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.profile-section h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.profile-section p {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-/* Quote Section */
-.quote-section {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 20px 0;
-  text-align: center;
-}
-
-/* Sections */
-.about-section,
-.hobbies-section,
-.future-section {
-  background-color: #d9d9d9;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px;
-  width: 80%;
-}
-
-.about-section h2,
-.hobbies-section h2,
-.future-section h2 {
-  margin-top: 0;
-}
-
-.hobbies-section ul {
+.side-menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.hobbies-section ul li {
+.side-menu ul li a {
+  display: block;
+  padding: 16px 24px;
+  color: #222;
   font-size: 18px;
-  margin: 10px 0;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
-.hobbies-section ul li i {
-  margin-right: 10px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  background-color: #b702ff; /* Purple footer */
+.side-menu ul li a:hover {
+  background: #b702ff;
   color: #fff;
-  padding: 10px 0;
-  width: 100vw; /* Ensures the footer spans the entire width of the viewport */
+}
+
+/* Hamburger button */
+.burger {
+  background: #b9fdfd;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+}
+
+/* Ensure main content isn't under the menu */
+main {
+  margin-left: 0;
+  transition: margin-left 0.3s;
+}
+
+@media (min-width: 600px) {
+  main {
+    margin-left: 0;
+  }
 }
