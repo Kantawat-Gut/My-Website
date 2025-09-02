@@ -110,3 +110,87 @@ footer {
   font-size: 16px;
   z-index: 10;
 }
+.activity-header {
+  margin-top: 80px;
+  margin-bottom: 24px;
+}
+
+.activity-label {
+  background: #d6ff44;
+  color: #222;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 12px 36px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.activity-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto 32px auto;
+}
+
+.activity-images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 270px;
+  max-width: 320px;
+}
+
+.activity-img {
+  width: 100%;
+  min-height: 180px;
+  max-height: 220px;
+  object-fit: cover;
+  background: #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.activity-details {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.activity-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+  margin-top: 0;
+}
+
+.activity-desc-th {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .activity-content {
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+  }
+  .activity-images {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  .activity-img {
+    min-height: 120px;
+    max-height: 140px;
+    max-width: 120px;
+  }
+}
