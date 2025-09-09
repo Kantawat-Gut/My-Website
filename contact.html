@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อ - Portfolio</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="index.html" class="logo">Portfolio</a>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="portfolio.html">ผลงาน</a></li>
+                    <li><a href="skills.html">ประสบการณ์และทักษะ</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                    <li><a href="awards.html">เกียรติประวัติ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="portfolio.html">ผลงาน</a></li>
+                <li><a href="skills.html">ประสบการณ์และทักษะ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+                <li><a href="awards.html">เกียรติประวัติ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <section class="contact-section">
+            <h2>ติดต่อ</h2>
+            <div class="contact-container">
+                <div class="contact-form-box">
+                    <h3>ส่งข้อความถึงฉัน</h3>
+                    <form action="#" method="post" class="contact-form">
+                        <label for="name">ชื่อ:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">อีเมล:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">ข้อความ:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit" class="btn-submit">ส่งข้อความ</button>
+                    </form>
+                </div>
+                <div class="contact-info-box">
+                    <h3>ข้อมูลติดต่อโดยตรง</h3>
+                    <p><i class="fas fa-envelope"></i> อีเมล: email@example.com</p>
+                    <p><i class="fas fa-link"></i> LinkedIn: linkedin.com/in/yourname</p>
+                    <p><i class="fab fa-facebook"></i> Facebook: facebook.com/yourname</p>
+                    <p><i class="fab fa-github"></i> GitHub: github.com/yourname</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3872.8169895161946!2d100.50882417485894!3d13.909884686498645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e284bf07b056ef%3A0x91389b7279f9988d!2z4LmC4Lij4LiH4LmA4Lij4Li14Lii4LiZ4Liq4Lin4LiZ4LiB4Li44Lir4Lil4Liy4Lia4Lin4Li04LiX4Lii4Liy4Lil4Lix4LiiIOC4meC4meC4l-C4muC4uOC4o-C4tQ!5e0!3m2!1sth!2sth!4v1757340426388!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

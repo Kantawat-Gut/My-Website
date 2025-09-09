@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าแรก - Portfolio</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <a href="index.html" class="logo">Portfolio</a>
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="portfolio.html">ผลงาน</a></li>
+                    <li><a href="skills.html">ประสบการณ์และทักษะ</a></li>
+                    <li><a href="contact.html">ติดต่อ</a></li>
+                    <li><a href="awards.html">เกียรติประวัติ</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <nav class="mobile-menu">
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="portfolio.html">ผลงาน</a></li>
+                <li><a href="skills.html">ประสบการณ์และทักษะ</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+                <li><a href="awards.html">เกียรติประวัติ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-section">
+        <div class="profile-card">
+            <div class="profile-image-container">
+                <img src="img/me.png" alt="รูปโปรไฟล์" class="profile-image">
+            </div>
+            <h1>ชื่อ-นามสกุล</h1>
+            <p class="institution">สถานศึกษา</p>
+            <blockquote class="quote">"คำกล่าวทักทาย/ประโยคแนะนำตัวสั้นๆ/คำคม"</blockquote>
+            <p class="bio">
+                สวัสดีครับ/ค่ะ! ผม/ดิฉันคือ [ชื่อ] เป็นนักพัฒนาเว็บไซต์ที่มีประสบการณ์ในการสร้างและออกแบบเว็บไซต์มาเป็นเวลา [จำนวนปี] ปี โดยมีความมุ่งมั่นที่จะสร้างสรรค์ผลงานที่มีคุณภาพและตอบโจทย์ความต้องการของลูกค้า
+            </p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
